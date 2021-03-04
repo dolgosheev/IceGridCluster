@@ -1,0 +1,24 @@
+# Configuration file (03/05/21 00:31:31.542)
+
+# Server configuration
+Ice.Admin.ServerId=Server
+Ice.Admin.Endpoints=tcp -h localhost
+Ice.ProgramName=Server
+# Object adapter Adapter
+Adapter.Endpoints=tcp -h 127.0.0.1 -p 10004
+Adapter.AdapterId=Server.Adapter
+Adapter.ReplicaGroupId=replica_1
+# Server descriptor properties
+bank-system.name=Adapter
+bank-system.endpoint=tcp -h 127.0.0.1 -p 10004
+bank-system.identity=app
+Ice.StdErr=ice.err
+Ice.StdOut=ice.out
+IceMX.Metrics.ByParent.GroupBy=parent
+IceMX.Metrics.Debug.GroupBy=id
+Ice.ACM.Close=4
+Ice.ACM.Heartbeat=0
+Ice.ACM.Timeout=30
+bank-system.serverid=s1
+bank-system.nosql=127.0.0.1:6844,password=password
+Ice.Default.Locator=LocalTestGrid/Locator:tcp -p 4061 -h 127.0.0.1
